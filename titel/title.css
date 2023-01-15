@@ -1,0 +1,188 @@
+/* Обнуление файла css */
+*{
+padding: 0;
+margin: 0;
+border: 0;
+}
+*,*:before,*:after{
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+height: 100%;
+width: 100%;
+font-size: 100%;
+line-height: 1;
+font-size: 14px;
+-ms-text-size-adjust: 100%;
+-moz-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+/* .cl1{
+    font-size: 15px;
+    border: 5px solid red;
+    width: 29%;
+    padding: 20px;
+    text-align: justify;
+    margin: 20px auto;
+}
+.box{
+    margin-top: 100px;
+    border: 10px solid blue;
+    display: flex;
+    justify-content: space-around;
+}
+/* span{
+    border: 10px solid yellow;
+    padding: 20px;
+    margin: 50px;
+} */ 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+main{
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+.about__titel {
+    margin: 0px 0px 30px 0px;
+}
+
+.titel {
+    font-size: 34px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 8.95;
+    position: relative;
+    text-align: center;
+    padding: 0px 0px 30px 0px;
+}
+.titel:after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    bottom: 0;
+    left: 50%;
+    background-color: #000;
+    margin: 0px 0px 0px -25px;
+}
+
+/* ************************************ */
+.about {}
+
+.about__body {
+    max-width: 823px;
+    margin: 0 auto;
+}
+
+
+.about__header {
+    maregin: 0px 0px  65px 0px;
+}
+
+.about__titel {
+    margin: 0px 0px 30px 0px;
+    
+}
+
+.titel {
+    font-size: 34px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 8.95;
+    position: relative;
+    text-align: center;
+    padding: 0px 0px 30px 0px;
+}
+.titel:after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    bottom: 0;
+    height: 1px;
+    left: 50%;
+    background-color: #000;
+    margin: 0px 0px 0px -25px;
+}
+
+.about__text {
+    
+    /* max-width: 688px;
+    color: #868585;
+    font-size: 14px;
+    font-weight: 300px;
+    text-align: center;
+    line-height: 25.89px; */
+/* Style for "We special" */
+    max-width: 688px;
+    color: #868585;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 25.89px;
+    text-align: center;
+    margin: 0px auto 70px;
+}
+
+
+.about__row {
+    display: flex;
+    font-size: 0; 
+    margin: 0 -15px;
+}
+
+.about__column {
+    flex: 0 0 33.33333%;
+    padding: 0 -15px;
+}
+
+
+.item-about {}
+
+.item-about__icon {
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 92px;
+    height: 92px;
+    border: 2px solid #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-about_titel {
+    text-align: center;
+    color: #000000;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 3.53px;
+    margin 0px 0px 35px 0px;
+}
+
+.item-about__text {
+    text-align: center;
+    width: 163px;
+    height: 66px;
+    color: #868585;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+    display: flex;
+    justify-content: center;
+}

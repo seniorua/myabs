@@ -1,0 +1,331 @@
+*{
+padding: 0;
+margin: 0;
+border: 0;
+}
+*,*:before,*:after{
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+height: 100%;
+width: 100%;
+font-size: 100%;
+line-height: 1;
+font-size: 14px;
+-ms-text-size-adjust: 100%;
+-moz-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/* ********************************* */
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Roboto;
+    font-size: 1rem;
+}
+.container{
+    background-color: rgba(180, 180, 180, 0.315);
+    width: 100%;
+    height: 5000px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 35px;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.intro{
+    width: 100%;
+    height: 100vh;
+    background: url("/assets/img/Layer_15.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.layer{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* background-color: #fce38a; */
+    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+}
+
+/* .logo{
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+} */
+
+/* .nav{
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: uppercase;
+} */
+
+/* .nav__link{
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    transform: color .2s linear;
+}
+
+.nav__link:active, .nav__link:hover{
+    color: #fce38a;
+} */
+body{
+    width: 100%;
+    min-width: 200px;
+}
+
+.header {
+    width: 100%;
+    max-width: 1200px;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    margin-left: 15px;
+}
+
+logo:hover{
+    text-shadow: 2px 2px 8px #00a650;
+}
+/* ********************************* */
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav__link {
+    display: block;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    transition: color .3s linear;
+    margin: 0 15px;
+    
+    /* flex-basis: 30%; */
+}
+
+.nav__link:after {
+    display: block;
+    content: "";
+    position: absolute;
+    /* top: 22px; */
+    width: 100%;
+    height: 3px;
+    background-color: #fce38a00;
+    margin: 12px 0;
+    /* visibility: hidden; */
+    /* opacity: 0; */
+    transition: background-color .3s linear;
+}
+
+.nav__link:hover:after,
+.nav__link:active:after,
+.nav__link:focus:after {
+    /* visibility: visible; */
+    /* opacity: 1; */
+    background-color: #fce38a;
+}
+
+
+.nav__link:hover{
+    color: #fce38a;
+}
+/* *************************** */
+.test{
+    margin: 100px 0;
+}
+
+.test__link{
+    display: block;
+    font-family: Montserrat;
+    font-weight: 700;
+    letter-spacing: 7px;
+    color: #ffffff;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: relative;
+    max-width: max-content;
+    line-height: 2;
+    margin: 0 20px;
+    transition: color .2s linear;
+}
+
+.test__link:after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    /* Чтоб подчеркивания не было видно, указываем цвет фона полностью прозрачным */
+    background-color: #fce38a00;
+    width: 100%;
+    /* visibility: hidden; */
+    /* transition: visibility .3s linear; */
+    /* transition: all 1s ease 0s; */
+    transition: background-color .2s linear ;
+}
+
+.test__link:hover, 
+.test__link:active,
+.test__link:focus{
+    color: #fce38a;
+}
+
+/* .test__link:visited{
+    color: blueviolet;
+} */
+
+.test__link:hover:after, 
+.test__link:focus:after, 
+.test__link:active:after{
+    /* visibility: visible; */
+    /* задаем цвет фона непрозрачным */
+    background-color: #fce38a;
+}
+/* ********************************* */
+.test1 {}
+
+.test1__after {}
+
+.test1__link {
+    /* display: inline-block; */
+    position: relative;
+    font-size: 50px;
+    color: black;
+    cursor: crosshair;
+    text-decoration: none
+}
+
+.test1__link:after{
+content: "";
+display: block;
+position: absolute;
+background-color: black;
+/* left: 0; */
+width: 100%;
+height: 5px;
+visibility: hidden;
+/* transition: visibility 1s linear; */
+}
+
+.test1__link:hover:after{
+    visibility: visible;
+}
+/* *********************************** */
+.a {
+    font-size: 100px;
+    position: relative;
+    color: #00a650;
+    /*задаём цвет ссылки*/
+    cursor: pointer;
+    line-height: 1;
+    /*задаём высоту строки*/
+    text-decoration: none;
+    /*убираем подчёркивание*/
+
+}
+
+.a:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0;
+    /*задаём длинну линии до наведения курсора*/
+    height: 20px;
+    /*задаём ширину линии*/
+    background-color: #00a650;
+    /*задаём цвет линии*/
+    content: "";
+    transition: width 0.3s ease-out;
+    /*задаём время анимации*/
+}
+
+.a:hover:after,
+.a:focus:after {
+    width: 100%;
+    /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+/* ************************************* */
+.btn-container {
+    width: 100%;
+    /* height: 100vh; */
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+.btn {
+    height: 200px;
+    width: 400px;
+    displa
+}

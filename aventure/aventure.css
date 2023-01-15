@@ -1,0 +1,14 @@
+body{
+    background-image: url(img/bacground.png);
+    background-size: 500px 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.block{
+    width: 1000px;
+    height: 300px;
+    border-radius: 30px;
+    background-color: rgba(169, 169, 169, 0.26);
+    margin: o auto;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+</head>
+<body>
+    <div>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div>
+                <p>Ваше имя:</p>
+                    <div>
+                        <input placeholder="Имя" tabindex="1" name="username" type="text">
+                    </div>
+            </div>
+            <div>
+                <p>Пароль:</p>
+                    <div>
+                        <input tabindex="2" name="userpassword" type="password">
+                    </div>
+            </div>
+            <div>
+                <p>Номер телефона</p>
+                <p>Выберете срану:</p>
+                <div>
+                    <input type="">
+                </div>
+                <div>
+                    <input tabindex="3" name="userphone" type="tel">
+                </div>
+            </div>
+            <div>
+                <p>Пол:</p>
+                <div>
+                    <input checked tabindex="4" name="gender" type="radio" value="male"> Мужской
+                </div>
+                <div>
+                    <input tabindex="4" name="gender" type="radio" value="female"> Женский
+                </div>
+
+            </div>
+            <div>
+                <p>Имущество:</p>
+                    <div>
+                        <input checked tabindex="5" name="bike" type="checkbox" value="yes"> Велосипед
+                    </div>
+                    <div>
+                        <input tabindex="6" name="car" type="checkbox" value="yes"> Авто
+                    </div>  
+                    <div>
+                        <input disabled tabindex="7" name="hause" type="checkbox" value="yes"> Жилье
+                    </div>   
+            </div>
+            <div>
+                <p>Дополнительная информация:</p>
+                    <div>
+                        <textarea tabindex="8" name="addinfo"></textarea>
+                    </div>
+            </div>
+            <div>
+                <p>Прикрепи фото:</p>
+                    <div>
+                        <input tabindex="9" type="file" name="userphoto">
+                    </div>
+            </div>
+            <div>
+                <p>Любимый цвет</p>
+                <select tabindex="10" name="color">
+                    <option value="red">Красный</option>
+                    <option value="blue">Синий</option>
+                    <option selected value="yellow">Желтый</option>
+                </select>
+            </div>
+            <div>
+                <p>Действия</p>
+                <button tabindex="11" type="submit">Отправить</button>
+                <button tabindex="12" type="reset">Очистить</button>
+            </div>  
+        </form>
+    </div>
+    
+</body>
+</html>

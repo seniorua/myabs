@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button{
+        color: #fff;
+        background-color: red;
+        border-radius: 2px;
+        border: none;
+        padding: .7rem 3rem;
+        margin: 0 20px;
+        margin-top: 20px;
+        box-shadow: 2px 2px 3px 4px rgba(0, 0, 0, .7);
+        left: 0;
+        top: 0;
+        position: relative;
+        transition: .2s;
+    }
+    button:active{
+        left: 5px;
+        top: 5px;
+        box-shadow: 0 0 3px  #000;
+        background-color: red;
+        transition: .4s;
+    }
+
+    button:hover{
+        background-color: rgba(255,0,0, .6);
+    }
+</style>
+<body>
+    <h2>Выбери свою счастливую кнопку :)</h2>
+    <button onclick="document.location='love.html'">Кнопка</button>
+    <button>Кнопка</button>
+    <button>Кнопка</button>
+    <button>Кнопка</button>
+</body>
+</html>

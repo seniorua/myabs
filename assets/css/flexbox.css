@@ -1,0 +1,233 @@
+/*-------Общие стили-------------------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    margin: 0;
+    padding: 0;
+    color: rgb(41, 39, 39);
+    background-color: rgb(207, 199, 223);
+}
+body{
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 800px;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, "Helventica Neue" Helvetica, sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    color: rgb(41, 39, 39);
+    margin-top: 10px;
+}   
+/* Просто разделяющая линия */
+.linia{
+    display: inline-block;
+    content: "";
+    border: #fff dotted 2px;
+    background-color: rgb(114, 114, 233);
+    height: 3px;
+    width: 100%;
+    margin: 20px auto 10px;
+}
+/*-------Задание цветов и толщины 
+рамкам блоков--------------------------*/
+.block_row{
+    border: 20px solid rgb(241, 241, 90);
+    margin: 0px 0px 20px 0px;
+}
+.block_column{
+    border: 20px solid rgb(114, 114, 233);
+}
+.block_item{
+    background-color: rgb(125, 156, 125);
+    padding: 20px;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 700;
+}
+/*-------Расшифровка цветов 
+рамок стиля----------------------------*/
+.block_list li{
+    padding: 10px;
+    display: inline-block;
+}
+.block_info_y:before{
+    content: "";
+    display: inline-block;
+    margin:0 10px 0 0;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(241, 241, 90);
+    border: 2px black;
+}
+.block_info_b:before{
+    content: "";
+    display: inline-block;
+    margin:0 10px 0 0;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(114, 114, 233);
+    border: 2px black;
+}
+.block_info_g:before{
+    content: "";
+    display: inline-block;
+    margin:0 10px 0 0;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(125, 156, 125);
+    border: 2px black;
+}
+/*-------Общее расположение блоков 
+на странице----------------------------*/
+/*.block{
+    margin: 0 auto;
+    width: 80%; 
+}
+/*-------Стили для блока flex----------*/
+.block_fl{
+    display: flex;
+}
+/*-------Стили для inline-flex---------*/
+.block_in_fl{
+    display: inline-flex;
+}
+/*-------Демонстрация justify-content
+по умолчанию стоит flex-start----------*/
+.block_jc{
+    display: flex;
+    justify-content: flex-start;
+}
+/*-------Демонстрация flex-end---------*/
+.block_jc_fe{
+    display: flex;
+    justify-content: flex-end;
+}
+/*-------Демонстрация center-----------*/
+.block_jc_ce{
+    display: flex;
+    justify-content: center;
+}
+/*-------Демонстрация space-between----*/
+.block_jc_sb{
+    display: flex;
+    justify-content: space-between;
+}
+/*-------Демонстрация space-arownd-----*/
+.block_jc_sa{
+    display: flex;
+    justify-content: space-around;
+}
+/*-------Демонстрация space-evenly-----*/
+.block_jc_sev{
+    display: flex;
+    justify-content: space-evenly;
+    /*overflow: hidden;*/
+}
+/*--------align-items
+значение strech по умолчанию-----------*/
+.block_ai_st{
+    display: flex;
+    align-items: stretch;/*Это значение стоит по умолчанию*/
+}
+.change{
+    text-align: center;
+    height: 70px;
+    width: 200px;
+}
+/*--------align-items
+flex-start-----------------------------*/
+.block_ai_start{
+    display: flex;
+    align-items: flex-start;
+}
+/*--------align-items
+flex-end-------------------------------*/
+.block_ai_end{
+    display: flex;
+    align-items: flex-end;
+}
+/* align-items, center ----------------*/
+.block_ai_center{
+    display: flex;
+    align-items: center;
+}
+/* align-items, baceline --------------*/
+.block_ai_baceline .change{
+    font-size: 30px;
+}
+.block_ai_baceline{
+    display: flex;
+    align-items: baseline;
+}
+/* flex-wrap, wrap---------------------*/
+.block_wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*--------flex-wrap
+значение wrap-reverse------------------*/
+.block_wrap_rev{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+/* Свойство align-self ----------------*/
+.block_al_self{
+    display: flex;
+    align-items: center;
+}
+.block_al_self .item_1{
+    align-self: flex-end;
+}
+.block_al_self .item_2{
+    
+}
+.block_al_self .item_3{
+    
+}
+/* Свойство order ---------------------*/
+.block_order{
+    display: flex;
+    align-items: center;
+}
+.block_order .item_1{
+    order: 3;
+    align-self: flex-end;
+}
+.block_order .item_2{
+    order: 2;
+}
+.block_order .item_3{
+    order: 1;
+}
+/* flex-basis -------------------------*/
+.block_flex_basis{
+    display: flex;
+    align-items: center;
+}
+.block_flex_basis .block_column{
+    /* flex-basis: auto; */
+    /* flex-basis: 100px; */
+    /* flex-grow: по умолчанию стоит 
+    значение 0 */
+    /* flex-grow: 0; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+    /* Все эти три свойства можно 
+    записывать одной 
+    сокращенной строкой flex
+    где первое значение flex-grow,
+    второе flex-shrink,
+    третье flex-basis; */
+    flex: 0 1 auto;
+}
+.block_flex_basis .item_1{
+    
+}
+.block_flex_basis .item_2{
+
+}
+.block_flex_basis .item_3{
+
+}
