@@ -24,10 +24,15 @@ body{
     margin: 0 auto;
 }
 
-a{
+.nav a{
     text-decoration: none;
     color: inherit;
 }
+.nav a:hover}{
+    text-decoration: none;
+    color: inherit;
+}
+
 
 .header{
     position: fixed;
@@ -45,6 +50,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 /* styles of Logo */
@@ -97,7 +103,7 @@ a{
     transition: color .2s linear;
 }
 
-.nav__item:after{
+/* .nav__item:after{
     content: "";
     display: block;
     position: absolute;
@@ -109,17 +115,17 @@ a{
 
 .nav__item:hover:after{
     background-color: rgba(164, 175, 164, 0.5);
-}
+} */
 
 .nav__item:hover{
     /* font-weight: 700; */
     /* text-shadow: 0px 0px 55px rgb(170, 233, 55); */
-    color: rgba(99, 126, 98, 0.5);
+    color: rgba(255, 255, 255, 0.808);
     transform: scale(1.1);
-    transition: 1s;
+    transition: .3s;
 }
 nav__item:not(:hover){
-    transition: 1s;
+    transition: .4s;
 }
 /* *********************************************** */
 /* *********************************************** */
@@ -210,8 +216,11 @@ li:after{
 
 
 footer{
+    display: flex;
+    justify-content: center;
     position: relative;
     top: 100px;
+    color: #fff;
     background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
     /* background-color: rgb(196, 190, 190); */
     height: 200px;
