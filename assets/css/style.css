@@ -18,6 +18,12 @@ body{
     top: 75px;
 }
 
+.border{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 a{
     text-decoration: none;
     color: inherit;
@@ -129,15 +135,10 @@ nav__item:not(:hover){
     box-shadow: 0 0 1px 3px rgb(240, 240, 240);
     border: 1px solid rgb(206, 206, 206);
     border-radius: 5px;
-    margin: 0 20px;
     cursor:text;
 }
 /* ************************************************ */
-.border{
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+
 /* ************************* */
 
 .task h2{
@@ -154,12 +155,10 @@ nav__item:not(:hover){
 }
 
 .hello{
-    width: 100%;
+    /* width: 100%;
     height: auto;
-    /* min-height: 100px; */
-
     max-width: 800px;
-    margin: 10px auto;
+    margin: 10px auto; */
     text-align: center;
     border: 3px dotted yellow;
     padding: 25px;
@@ -171,10 +170,6 @@ nav__item:not(:hover){
 }
 
 .but_block{
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    margin: 20px auto;
     border: 3px dotted green;
     padding: 25px;
 }
@@ -215,8 +210,11 @@ li:after{
 
 
 footer{
-    background-color: rgb(196, 190, 190);
-    height: 100px;
+    position: relative;
+    top: 100px;
+    background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+    /* background-color: rgb(196, 190, 190); */
+    height: 200px;
 }
 .section_try{
     display: none;
