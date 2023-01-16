@@ -42,6 +42,9 @@ body{
     line-height: 1.5;
     font-size: 1.5rem;
 }
+a, a:visited{
+    text-decoration: none;
+}
 
 .header{
     position: fixed;
