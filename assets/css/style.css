@@ -42,8 +42,9 @@ body{
     line-height: 1.5;
     font-size: 1.5rem;
 }
-a, a:visited{
+a{
     text-decoration: none;
+    color: inherit;
 }
 
 .header{
@@ -61,7 +62,6 @@ a, a:visited{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 /* styles of Logo */
@@ -93,6 +93,7 @@ a, a:visited{
     max-width: max-content;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
 }
 
