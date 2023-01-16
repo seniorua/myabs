@@ -58,6 +58,11 @@ a{
     box-shadow: 0px 0px 8px 3px grey;
 }
 
+.body{
+    position: relative;
+    top: 67px;
+}
+
 .header__box{
     display: flex;
     justify-content: space-between;
@@ -143,7 +148,6 @@ nav__item:not(:hover){
     background-color: rgb(241, 235, 235);
     color: #c6c6c6;
     position: relative;
-    top: 67px;
     font-size: 15px;
     /* text-align: center; */
     line-height: 30px;
@@ -177,6 +181,8 @@ nav__item:not(:hover){
 .hello{
     width: 100%;
     height: auto;
+    /* min-height: 100px; */
+
     max-width: 800px;
     margin: 10px auto;
     text-align: center;
