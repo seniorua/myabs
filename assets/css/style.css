@@ -10,7 +10,7 @@ body{
     background-color: antiquewhite;
     font-family: Roboto;
     line-height: 1.5;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .page{
@@ -23,16 +23,6 @@ body{
     max-width: 1200px;
     margin: 0 auto;
 }
-
-.nav a{
-    text-decoration: none;
-    color: inherit;
-}
-.nav a:hover}{
-    text-decoration: none;
-    color: inherit;
-}
-
 
 .header{
     position: fixed;
@@ -55,7 +45,7 @@ body{
 
 /* styles of Logo */
 .logo {
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: Montserrat;
     font-weight: 700;
     /* transition: scale .5 linear; */
@@ -79,6 +69,14 @@ body{
 
 /* *********************************************** */
 /* Navigations styles */
+.nav a{
+    text-decoration: none;
+    color: inherit;
+}
+.nav a:hover}{
+    text-decoration: none;
+    color: inherit;
+}
 .nav{
     /* max-width: max-content; */
     max-width: max-content;
@@ -93,7 +91,7 @@ body{
     user-select: none;
     font-family: Montserrat;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 10px 20px;
     /* padding: 10px; */
     /* text-shadow: ; */
