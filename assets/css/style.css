@@ -165,7 +165,7 @@ nav__item:not(:hover){
     max-width: 800px;
     margin: 10px auto; */
     text-align: center;
-    border: 3px dotted yellow;
+    /* border: 3px dotted yellow; */
     padding: 25px;
 }
 
