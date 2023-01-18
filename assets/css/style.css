@@ -27,6 +27,7 @@ a:hover{
 /* ******************************************** */
 .page{
     position: relative;
+    padding: 5px;
     top: 0px;
 }
 
@@ -62,6 +63,7 @@ a:hover{
     font-size: 2.5rem;
     font-family: Montserrat;
     font-weight: 700;
+    font-style: normal;
     padding: 0 10px;
     /* transition: scale .5 linear; */
 }
