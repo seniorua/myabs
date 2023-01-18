@@ -1,9 +1,11 @@
 
 html{
     /* border: 10px dotted rgb(255, 0, 0); */
-
 }
+
 body{
+    font-family: Roboto;
+    text-align: justify;
     margin: 0;
     color: rgb(44, 44, 44);
     /* border: 10px dotted black; */
@@ -11,6 +13,16 @@ body{
     font-family: Roboto;
     line-height: 1.5;
     font-size: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(59, 128, 231);
+    font-style: italic;
+}
+a:hover{
+    /* text-decoration: underline; */
+    color: rgba(59, 128, 231, 0.541);
 }
 
 .page{
@@ -77,7 +89,7 @@ body{
     text-decoration: none;
     color: inherit;
 }
-.nav a:hover}{
+.nav a:hover{
     text-decoration: none;
     color: inherit;
 }
@@ -137,9 +149,7 @@ nav__item:not(:hover){
     cursor:text;
 }
 /* ************************************************ */
-
 /* ************************* */
-
 .task h2{
     text-align: center;
 }
@@ -172,7 +182,8 @@ nav__item:not(:hover){
     border: 3px dotted green;
     padding: 25px;
 }
-
+/* ******************************************* */
+/* Выравнивание блоков по центру с флексами ** */
 .demo{
     display: flex;
     width: 400px;
@@ -188,11 +199,8 @@ nav__item:not(:hover){
     background-color: blue;
     /* margin: auto auto; */
 }
-a{
-    display: block;
-}
-
-/* List num. Important!!! */
+/* ********************************************* */
+/* List num. Important!!!*********************** */
 ol {
     list-style: none;
     counter-reset: li;
@@ -205,7 +213,7 @@ li:before {
 li:after{
     content: counters(li,".");
 }
-
+/* *********************************************** */
 
 
 footer{
@@ -217,14 +225,4 @@ footer{
     background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
     /* background-color: rgb(196, 190, 190); */
     /* height: 200px; */
-}
-.section_try{
-    display: none;
-    background-color: aquamarine;
-    margin: 0;
-    padding: 0;
-}
-.section1{
-    display: none;
-    background-color: rgb(216, 186, 243);
 }
