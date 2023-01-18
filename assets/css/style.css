@@ -14,7 +14,7 @@ body{
     line-height: 1.5;
     font-size: 1rem;
 }
-
+/* ******************************************** */
 a{
     text-decoration: none;
     color: rgb(59, 128, 231);
@@ -24,10 +24,10 @@ a:hover{
     /* text-decoration: underline; */
     color: rgba(59, 128, 231, 0.541);
 }
-
+/* ******************************************** */
 .page{
     position: relative;
-    top: 75px;
+    top: 0px;
 }
 
 .border{
@@ -56,8 +56,8 @@ a:hover{
     align-items: center;
     flex-wrap: wrap;
 }
-
-/* styles of Logo */
+/* ******************************************** */
+/* Styles for Logo *******************************/
 .logo {
     font-size: 2.5rem;
     font-family: Montserrat;
@@ -65,13 +65,11 @@ a:hover{
     padding: 0 10px;
     /* transition: scale .5 linear; */
 }
+.blue{
+    color:rgb(0, 132, 255)
+}
 .logo:hover{
     /* transform: scale(1.1); */
-}
-
-.blue {
-    color: rgb(74, 156, 233);
-    /* font-weight: ; */
 }
 
 .logo a {
@@ -102,6 +100,9 @@ a:hover{
     align-items: center;
 }
 .sec{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
     position: sticky;
     top: 0;
     background-color: rgba(100, 148, 237, 0.719);
