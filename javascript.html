@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,400;1,300&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -31,24 +36,61 @@
     </section>
     
 <div class="border">
-    <h2>Консоль Инструменты</h2>
+    <h3>Консоль</h3>
+    <p> В вашем браузере есть инструменты разработчика, среди которых — <strong>консоль</strong>, которая позволяет набирать <strong>JavaScript</strong> прямо на этой веб-странице.</p>
     
-    <p>
-        В вашем браузере есть инструменты разработчика, среди которых — консоль, которая позволяет набирать JavaScript прямо на этой веб-странице.
-        Поскольку вы используете Mozilla Firefox, откройте инструменты разработчика с помощью Ctrl+Shift+K или F12
-    </p>
+    <p>В Mozilla Firefox, например, откройте инструменты разработчика с помощью <kbd class="key">Ctrl</kbd><kbd>+</kbd><kbd class="key">Shift</kbd><kbd>+</kbd><kbd class="key">K</kbd> или  <kbd class="key">F12</kbd></p>
     
-    <p>
-        Найдите в инструментах вкладку Console и посмотрим, сработает ли это!
+    <p>Найдите в инструментах вкладку <strong>Console</strong> и посмотрим, сработает ли это!</p>
     
-    </p>
-    <p>
-        В консоли введите или вставьте нижеследующий код и нажмите Enter
-    </p>
-    <p>
-        alert('Привет мир!')
-    
-    </p>
+    <p>В консоли введите или вставьте нижеследующий код и нажмите <kbd class="key">Enter</kbd></p>
+    <code>alert('Привет мир!')</code>
+
+<h3>Числа. Типы</h3>
+
+<p>Как и любой другой язык программирования, JavaScript может обрабатывать цифры.</p>
+
+<p>Эти числа могут быть большими или малыми, с десятичными знаками или без них, объединенными посредством числовых операций...</p>
+
+<code>alert(9+5 * 3)</code>
+
+
+<h3>Размеры браузера</h3>
+
+<p>Ширину браузера можно получить с помощью JavaScript:</p>
+
+<code>alert(window.innerWidth)</code>
+
+<p>Cуществует и <code>window.innerHeight</code>, и <code>window.scrollY</code> (даёт текущую позицию прокрутки).</p>
+
+<h3>Объекты, типы</h3>
+
+<p><dt><code>window</code></dt> — это JavaScript объект (ещё один тип данных).</p>
+
+<p><dt><code>innerWidth</code></dt> — это свойство объекта window.</p>
+Мы использовали точку ., чтобы указать, что нам нужен <code>innerWidth</code>, который существует внутри объекта <code>window</code>
+
+<p>Объект JavaScript представляет собой тип данных, который содержит другие типы данных.</p>
+
+<p>Например, window также содержит:</p>
+
+   <ul>
+        <li><code>window.origin</code>, который является строкой</li>
+        <li><code> window.scrollY</code>, который является числом</li>
+        <li><code>window.location</code>, который является объектом</li>
+   </ul>
+
+<p>Если <code>window</code> — это объект, содержащий location, который является другим объектом, это означает, что JavaScript поддерживает dложенность.</p>
+
+<p>Свойством объекта может быть другой объект.</p>
+
+<p>Так как <code>window.location</code> тоже объект, он имеет свои собственные свойства. Чтобы получить доступ к этим свойствам, просто добавьте еще одну точку . и имя свойства.</p>
+
+<p>Например, свойство <code>href</code> существует:</p>
+
+<code>alert(window.location.href)</code>
+
+
 </div>    
 
 </body>

@@ -25,6 +25,45 @@ a:hover{
     color: rgba(59, 128, 231, 0.541);
 }
 /* ******************************************** */
+code {
+    font-size: 1.1rem;
+    background-color: #dfdfdf;
+    color: rgba(34, 88, 102, 0.685);
+}
+
+/* strong code{
+    background-color: inherit;
+} */
+
+.code-block {
+    border-radius: .3rem;
+    padding: 10px 20px;
+    display: block;
+    color: rgba(34, 88, 102, 0.685);
+}
+/* ******************************************** */
+kbd{
+    padding: 0 .3rem;
+    border-radius: 10%;
+}
+.key {
+    display: inline-block;
+    min-width: 2rem;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid grey;
+    box-shadow: 1px 1px 2px 2px rgb(92, 92, 92), inset 0 0 3px 1px rgba(128, 128, 128, 0.452);
+    /* box-shadow: 1px 1px 2px 2px rgb(92, 92, 92); */
+}
+/* ******************************************** */
+dt{
+    display: inline-block;
+    background-color: yellow;
+}
+dt code{
+    background-color: inherit;
+}
+/* ******************************************** */
 .page{
     position: relative;
     padding: 5px;
@@ -208,14 +247,14 @@ ol {
     list-style: none;
     counter-reset: li;
   }
-li:before {
+ol li:before {
   counter-increment: li; 
   content: counters(li,".") ". ";
 }
 
-li:after{
+/* li:after{
     content: counters(li,".");
-}
+} */
 /* *********************************************** */
 
 
