@@ -38,6 +38,7 @@ code {
 .code-block {
     border-radius: .3rem;
     padding: 10px 20px;
+    margin: 5px 0;
     display: block;
     color: rgba(34, 88, 102, 0.685);
 }
