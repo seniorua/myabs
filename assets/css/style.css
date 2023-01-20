@@ -44,7 +44,7 @@ code {
 /* ******************************************** */
 kbd{
     padding: 0 .3rem;
-    border-radius: 10%;
+    border-radius: 5px;
 }
 .key {
     display: inline-block;
@@ -53,7 +53,6 @@ kbd{
     text-align: center;
     border: 1px solid grey;
     box-shadow: 1px 1px 2px 2px rgb(92, 92, 92), inset 0 0 3px 1px rgba(128, 128, 128, 0.452);
-    /* box-shadow: 1px 1px 2px 2px rgb(92, 92, 92); */
 }
 /* ******************************************** */
 dt{
@@ -71,7 +70,7 @@ dt code{
 }
 
 .border{
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     padding: 0 5px;
     width: 100%;
     max-width: 1200px;
