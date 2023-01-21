@@ -26,7 +26,7 @@ a:hover{
 }
 /* ******************************************** */
 code {
-    font-size: 1.1rem;
+    font-size: 1rem;
     background-color: #dfdfdf;
     color: rgba(34, 88, 102, 0.685);
 }
@@ -36,11 +36,19 @@ code {
 } */
 
 .code-block {
+    display: block;
+    max-width: max-content;
+    text-align: left;
     border-radius: .3rem;
     padding: 10px 20px;
-    margin: 5px 0;
-    display: block;
+    margin: 5px 10px;
     color: rgba(34, 88, 102, 0.685);
+    border: 1px solid #434343;
+}
+
+.no-bg{
+    background-color: inherit;
+    color: inherit;
 }
 /* ******************************************** */
 kbd{
