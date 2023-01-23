@@ -1,0 +1,50 @@
+a{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.cline{
+    color: beige;
+    a{
+        background-color: antiquewhite;
+    }
+    p{
+        background-color: chocolate;
+        code{
+            font-weight: 700;
+        }
+    }
+}
+
+.header {
+
+    &__box {
+    }
+
+    &__logo {
+    }
+}
+.border {
+}
+.blue {
+}
+.sec {
+}
+.nav {
+
+    &__item {
+    }
+}
+.page {
+}
+.block1 {
+}
+.key {
+}
+.hello {
+}
+.demo {
+}
+.demo2 {
+}
+.list {
+}

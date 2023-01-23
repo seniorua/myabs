@@ -1,0 +1,16 @@
+a {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.cline {
+  color: beige;
+}
+.cline a {
+  background-color: antiquewhite;
+}
+.cline p {
+  background-color: chocolate;
+}
+.cline p code {
+  font-weight: 700;
+}
