@@ -81,13 +81,30 @@ kbd{
     box-shadow: 1px 1px 2px 2px rgb(92, 92, 92), inset 0 0 3px 1px rgba(128, 128, 128, 0.452);
 }
 /* ******************************************** */
-dt{
+dfn{
     display: inline-block;
     background-color: yellow;
+    font-style: normal;
 }
-dt code{
+dfn code{
     background-color: inherit;
 }
+/* ******************************************** */
+table{
+    /* border: 1px solid #434343; */
+    margin: 0;
+    width: 100%;
+
+    background-color: #868f96;
+    border-radius: 15px;
+}
+td{
+    background-color: antiquewhite;
+    margin: 0;
+    /* border: 1px solid #434343; */
+    padding: 0 10px;
+}
+
 /* ******************************************** */
 .page{
     position: relative;
